@@ -123,14 +123,11 @@ body {
         /* grid-template-columns: repeat(2, 100px);
         grid-template-rows: repeat(3, 100px); */
     }
-    .clickhere {
-        display: none;
-    }
     .closeIcon {
         position: relative;
         width: 173px;
         height: 21px;
-        left: 430px;
+        left: 450px;
         top: 20;
         font-family: Poppins;
         font-style: normal;
