@@ -1,397 +1,143 @@
+/* EVENTS */
+
 @import url('https://fonts.googleapis.com/css2?family=Neuton:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
-/* 
-" HEADER "
-" NAVIGATION BAR TOO.."
- */
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
 body {
     overflow-x: hidden;
 }
 
-.upcomingEvents {
-    /* BG */
-    display: flex;
-    /* Kingsley */
+.eventContainer {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 98.17%;
     background: #404554;
-    /* Navbar Shadow */
-    box-shadow: 0px 1px 0px #E5E9F2;
-    height: 50px;
+    height: 72px;
     width: 100vw;
     left: 0px;
     top: 0px;
     border-radius: 0px;
-    flex-direction: row;
-    /* grid-template-columns: repeat(2, 100px);
-    grid-template-rows: repeat(3, 100px); */
 }
 
 .nextBigEvent {
+    /* NEXT BIG EVENT: */
     position: absolute;
-    width: 115px;
-    height: 18px;
     left: 166px;
-    top: 0px;
+    top: 25px;
     font-family: Neuton;
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
     line-height: 18px;
-    /* identical to box height */
-    /* White */
     color: #FFFFFF;
-}
-
-.clickhere {
-    display: none;
 }
 
 .dateE {
     font-weight: 400;
 }
 
-.dateOfEvent {
-    /* Date: */
+.dateEvent {
+    /* Date: Saturday 21st, 2021. */
     position: relative;
-    width: 173px;
-    height: 21px;
     left: 392px;
-    top: 0;
+    top: 25px;
+    color: #FFFFFF;
     font-family: Poppins;
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
-    line-height: 18px;
-    /* identical to box height */
-    /* White */
-    color: #FFFFFF;
+    line-height: 21px;
 }
 
 .timeE {
     font-weight: 400;
 }
 
-.timeOfEvent {
-    /* Time:  */
-    position: relative;
-    width: 173px;
-    height: 21px;
-    left: 500px;
-    top: 0;
+.timeEvent {
+    position: absolute;
+    left: 615px;
+    top: 25px;
+    color: #FFFFFF;
     font-family: Poppins;
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
-    line-height: 18px;
-    /* identical to box height */
-    /* White */
+    line-height: 21px;
+}
+
+.locationE {
+    font-weight: 400;
+}
+
+.locationEvent {
+    position: absolute;
+    left: 764px;
+    top: 25px;
     color: #FFFFFF;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.closeEvent {
+    position: absolute;
+    left: 1217px;
+    top: 25px;
+    color: #FFFFFF;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
 }
 
 .closeIcon {
-    position: relative;
-    width: 173px;
-    height: 21px;
-    left: 615px;
-    top: 20;
+    position: absolute;
+    left: 1264px;
+    top: 25px;
+    color: #FFFFFF;
     font-family: Poppins;
     font-style: normal;
-    font-weight: bold;
+    font-weight: 400;
     font-size: 14px;
-    line-height: 18px;
-    /* identical to box height */
-    /* White */
-    color: #FFFFFF;
     cursor: pointer;
+    line-height: 21px;
 }
 
-@media screen and (min-width :801px) {
-    .upcomingEvents {
-        /* BG */
-        display: flex;
-        /* Kingsley */
-        background: #404554;
-        /* Navbar Shadow */
-        box-shadow: 0px 1px 0px #E5E9F2;
-        height: 50px;
-        width: 100vw;
-        left: 0px;
-        top: 0px;
-        border-radius: 0px;
-        flex-direction: row;
-        /* grid-template-columns: repeat(2, 100px);
-        grid-template-rows: repeat(3, 100px); */
-    }
-    .closeIcon {
-        position: relative;
-        width: 173px;
-        height: 21px;
-        left: 450px;
-        top: 20;
-        font-family: Poppins;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 14px;
-        line-height: 18px;
-        /* identical to box height */
-        /* White */
-        color: #FFFFFF;
-    }
-}
 
-@media screen and (max-width :800px) {
-    .upcomingEvents {
-        /* BG */
-        display: flex;
-        /* Kingsley */
-        background: #404554;
-        /* Navbar Shadow */
-        box-shadow: 0px 1px 0px #E5E9F2;
-        height: 50px;
-        width: 100vw;
-        left: 0px;
-        top: 0px;
-        border-radius: 0px;
-        flex-direction: row;
-        /* grid-template-columns: repeat(2, 100px);
-        grid-template-rows: repeat(3, 100px); */
+/* Portrait and Landscape */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .eventContainer {
+        width: 100%;
     }
     .nextBigEvent {
-        position: absolute;
-        width: 115px;
-        height: 18px;
-        left: 40px;
-        top: 0px;
-        font-family: Neuton;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 14px;
-        line-height: 18px;
-        /* identical to box height */
-        /* White */
-        color: #FFFFFF;
+        left: 20px;
+        top: 15px;
     }
-    .dateE {
-        font-weight: 400;
+    .dateEvent {
+        left: 160px;
+        top: 15px;
     }
-    .dateOfEvent {
-        /* Date: */
-        position: relative;
-        width: 173px;
-        height: 21px;
-        left: 170px;
-        top: 0;
-        font-family: Poppins;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 14px;
-        line-height: 18px;
-        /* identical to box height */
-        /* White */
-        color: #FFFFFF;
+    .timeEvent {
+        left: 20px;
+        top: 40px;
     }
-    .timeE {
-        font-weight: 400;
+    .locationEvent {
+        display: none;
     }
-    .timeOfEvent {
-        /* Time:  */
-        position: relative;
-        width: 173px;
-        height: 21px;
-        left: 220px;
-        top: 0;
-        font-family: Poppins;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 14px;
-        line-height: 18px;
-        /* identical to box height */
-        /* White */
-        color: #FFFFFF;
+    .closeEvent {
+        left: 260px;
+        top: 40px;
     }
     .closeIcon {
-        position: relative;
-        width: 173px;
-        height: 21px;
-        left: 200px;
-        top: 20;
-        font-family: Poppins;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 14px;
-        line-height: 18px;
-        /* identical to box height */
-        /* White */
-        color: #FFFFFF;
-    }
-}
-
-@media screen and (max-width :400px) {
-    .upcomingEvents {
-        /* BG */
-        display: flex;
-        /* Kingsley */
-        background: #404554;
-        /* Navbar Shadow */
-        box-shadow: 0px 1px 0px #E5E9F2;
-        height: 50px;
-        width: 100vw;
-        left: 0px;
-        top: 0px;
-        border-radius: 0px;
-        flex-direction: row;
-        /* grid-template-columns: repeat(2, 100px);
-        grid-template-rows: repeat(3, 100px); */
-    }
-    .nextBigEvent {
-        width: 90px;
-        height: 18px;
-        left: 5px;
-        font-size: 14px;
-        line-height: 13px;
-        /* identical to box height */
-        /* White */
-        color: #FFFFFF;
-    }
-    .dateE {
-        font-weight: 400;
-    }
-    .dateOfEvent {
-        /* Date: */
-        position: relative;
-        width: 120px;
-        height: 21px;
-        left: 125px;
-        top: 0;
-        font-family: Poppins;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 12px;
-        line-height: 13px;
-        /* identical to box height */
-        /* White */
-        color: #FFFFFF;
-    }
-    .timeE {
-        font-weight: 400;
-    }
-    .timeOfEvent {
-        /* Time:  */
-        position: relative;
-        width: 120px;
-        height: 21px;
-        left: 140px;
-        top: 0;
-        font-family: Poppins;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 14px;
-        line-height: 13px;
-        /* identical to box height */
-        /* White */
-        color: #FFFFFF;
-    }
-    .closeIcon {
-        width: 10px;
-        height: 21px;
-        left: 130px;
-        top: 20;
-        font-family: Poppins;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 14px;
-        line-height: 13px;
-        /* identical to box height */
-        /* White */
-        color: #FFFFFF;
-    }
-}
-
-@media screen and (max-width :550px) {
-    .upcomingEvents {
-        /* BG */
-        display: flex;
-        /* Kingsley */
-        background: #404554;
-        /* Navbar Shadow */
-        box-shadow: 0px 1px 0px #E5E9F2;
-        height: 50px;
-        width: 100vw;
-        left: 0px;
-        top: 0px;
-        border-radius: 0px;
-        flex-direction: row;
-        /* grid-template-columns: repeat(2, 100px);
-        grid-template-rows: repeat(3, 100px); */
-    }
-    .nextBigEvent {
-        width: 90px;
-        height: 18px;
-        left: 5px;
-        font-size: 14px;
-        line-height: 13px;
-        /* identical to box height */
-        /* White */
-        color: #FFFFFF;
-    }
-    .dateE {
-        font-weight: 400;
-    }
-    .dateOfEvent {
-        /* Date: */
-        position: relative;
-        width: 120px;
-        height: 21px;
-        left: 125px;
-        top: 0;
-        font-family: Poppins;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 12px;
-        line-height: 13px;
-        /* identical to box height */
-        /* White */
-        color: #FFFFFF;
-    }
-    .timeE {
-        font-weight: 400;
-    }
-    .timeOfEvent {
-        /* Time:  */
-        position: relative;
-        width: 120px;
-        height: 21px;
-        left: 140px;
-        top: 0;
-        font-family: Poppins;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 14px;
-        line-height: 13px;
-        /* identical to box height */
-        /* White */
-        color: #FFFFFF;
-    }
-    .closeIcon {
-        width: 10px;
-        height: 21px;
-        left: 130px;
-        top: 20;
-        font-family: Poppins;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 14px;
-        line-height: 13px;
-        /* identical to box height */
-        /* White */
-        color: #FFFFFF;
+        left: 300px;
+        top: 40px;
     }
 }
 
 
-/* 
-END OF 
-" HEADER "
-" NAVIGATION BAR TOO.."
- */
+/* END OF EVENTS.. */
