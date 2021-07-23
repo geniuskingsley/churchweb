@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CRHCC</title>
+    <title>Document</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
@@ -13,19 +13,18 @@
 
 <body>
 
-    <!--------------- UP COMING EVENTS AND NAVIGATION BAR.. ----------->
-    <header>
-        <div id="upcomingEvents" class="upcomingEvents">
-            <p class="nextBigEvent">NEXT EVENT:</p>
-            <p class="dateOfEvent">Date: <span class="dateE">Saturday 21st, 2021.</span></p>
-            <p class="timeOfEvent">Time: <span class="timeE">5:00pm.</span></p>
-            <p class="closeIcon"><span id="closeEvent" class="material-icons">
-               highlight_off
-               </span></p>
+    <div id="upcomingEvents" class="eventContainer">
+        <div class="allEventItems">
+            <span class="nextBigEvent">NEXT BIG EVENT:</span>
+            <span class="dateEvent">Date: <span class="dateE">Saturday 21st, 2021.</span></span>
+            <span class="timeEvent">Time: <span class="timeE">5:00pm.</span></span>
+            <span class="locationEvent">Location: <span class="locationE">C.H.C.C Havillah House of Gold.</span></span>
+            <span class="closeEvent">Close</span>
+            <span id="closeEvent" class="material-icons closeIcon">
+                highlight_off
+                </span>
         </div>
-    </header>
-    <!---------------END OF UP COMING EVENTS AND NAVIGATION BAR.. ----------->
-
+    </div>
 
     <script src="script.js"></script>
 </body>
